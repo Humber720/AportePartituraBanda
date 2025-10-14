@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Aportes Estudiantiles</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Registro de Aportes Estudiantiles</h2>
+
+    <form id="aporteForm">
+      <label for="nombre">Seleccionar Estudiante:</label>
+      <select id="nombre" required>
+        <option value="">-- Selecciona un estudiante --</option>
+        <option>YHORDY ALEXANDER BAUTISTA FLORES</option>
+        <option>ARMIN DENIS QUISPE MAMANI</option>
+        <option>NELVIN EZEQUIEL ESPEJO QUISPE</option>
+        <option>ALEJANDRO MATIAS CASTILLO FLORES</option>
+        <option>ASBEL JESUS QUISPE MAMANI</option>
+        <option>ARACELI BRIANCA QUISPE CARRILLO</option>
+        <option>LIZETH LUNA QUISPE AMARU</option>
+        <option>LEONEL ALEXANDER LUNA MERLO</option>
+        <option>DAVID SACARIAS YUJRA</option>
+        <option>SEBASTIAN DAVIDE CEREZO ADUVIRI</option>
+        <option>CRISTIAN KEVIN QUISPE MAMANI</option>
+        <option>GIORGIO MORIS CEREZO AUVIRI</option>
+        <option>AIRAN JUAN AYALA RODRIGUEZ</option>
+        <option>JOHAN ERLAN PEREZ GUTIERREZ</option>
+        <option>FABIAN CHAMBI GUTIERREZ</option>
+        <option>YERCO JHOEL MAMANI APAZA</option>
+        <option>JUAN RODRIGO MAYTA MAMANI</option>
+        <option>KEVIN PATRICIO LUNA MERLO</option>
+        <option>HANNA JANDY QUISPE GONZALES</option>
+        <option>NEYMAR DIDYEL QUISPE MAMANI</option>
+        <option>GENESIS CECILIA CHINO COYO</option>
+        <option>JUAN DE DIOS CHAMBI GUTIERREZ</option>
+        <option>FRANKLIN MAMANI CASTRO</option>
+        <option>RAQUEL WARA ROQUE MENDOZA</option>
+        <option>MELANI PILAR QUISPE MAMANI</option>
+        <option>ALEJANDRA QUISPE MAMANI</option>
+        <option>VICTOR FERNANDO VALVERDE SANCHEZ</option>
+        <option>JAQUELINE VALERY MAYTA HERRERA</option>
+        <option>JHONATAN DENNIS FLORES LOZA</option>
+        <option>GUADALUPE TATIANA QUISPE CARRILLO</option>
+        <option>YERCO PEREZ POMA</option>
+        <option>ANDREA HINOJOSA QUISPE</option>
+        <option>ARTURO ANDRES ROQUE MENDOZA</option>
+        <option>LISED CASAS RAMOS</option>
+        <option>MARIANELA RAMIREZ MENDOZA</option>
+        <option>JHAMIL EDGAR GUZMAN COHARITE</option>
+        <option>NOEL FIDEL MAYTA MAMANI</option>
+        <option>RIVER CRISTIAN PAUCARA ILLANES</option>
+        <option>DANER QUISPE QUISPE</option>
+        <option>ANGEL CHAMBI GUTIERREZ</option>
+        <option>CALLISAYA PAUCARA JHEREMY RICKY</option>
+        <option>MAMANI YUJRA ARSENIO SEBASTIAN</option>
+        <option>RAMIREZ MENDOZA CRISTIAN</option>
+      </select>
+
+      <label for="monto">Monto del aporte (Bs):</label>
+      <input type="number" id="monto" min="0" placeholder="Ej. 10" required>
+
+      <button type="submit">Registrar Aporte</button>
+    </form>
+
+    <div id="resultados">
+      <h3>Lista de Aportes Registrados</h3>
+      <ul id="listaAportes"></ul>
+    </div>
+  </div>
+
+  <script src="aporte.js"></script>
+</body>
+</html>
